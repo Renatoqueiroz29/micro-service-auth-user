@@ -2,6 +2,7 @@ import express from 'express';
 import usersRoute from './routes/users.route';
 import statusRoute from './routes/status.route';
 import errorHandler from './middlewares/error-handler.middleware';
+import authorizationRoute from './routes/authorization.route';
 
 const app = express();
 
@@ -9,9 +10,10 @@ const app = express();
 app.use(express.json()); //Configuração para receber dados json no content type
 app.use(express.urlencoded({extended: true }))
 
-//Utilizando os Endpoints
+//Configurações de Rotas
 app.use(usersRoute);
-app.use(statusRoute)
+app.use(statusRoute);
+app.use(authorizationRoute);
 
 //Middlewares tratamento de erros
 app.use(errorHandler);
