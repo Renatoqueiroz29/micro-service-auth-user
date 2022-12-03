@@ -1,6 +1,4 @@
-### Microserviço de autenticação com Nodejs
-
-Este projeto é uma API que serveum microserviço de autenticação de usuários em Nodejs utilizando banco de dados relacional Postgresql.
+### Microsserviço Para Inclusão, Consulta, Atualização e Exclusão de Usuário em Nodejs, typescript, PostgreSQL, Utilizando Autenticação com JWT
 
 Endpoints:
 #### Usuários
